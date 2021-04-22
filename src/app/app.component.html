@@ -1,0 +1,10 @@
+<nav class="navbar sticky-top navbar-dark bg-orsted">
+  <h3 class="navbar-brand">Ørsted</h3>
+</nav>
+
+<div class="m-3 d-flex flex-column">
+    <h4>Employees</h4>
+    
+    <app-employee-file-upload #fileupload></app-employee-file-upload>
+    <app-employee-list [record]="fileupload.employeeList"></app-employee-list>
+</div>
